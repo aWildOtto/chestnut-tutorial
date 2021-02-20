@@ -18,15 +18,18 @@
 
 print('Hello, welcome to our color mixing program!')
 first = input('Give me one primary color\n').lower()
+
 while first != 'red' and first != 'yellow' and first != 'blue':
     print('Sorry, {} is not a primary color, try again!'.format(first))
     first = input('Give me one primary color\n').lower()
 print('Great!', end=' ')
+
 second = input('Could you give me a second primary color?\n').lower()
 while second != 'red' and second != 'yellow' and second != 'blue':
     print('Sorry, {} is not a primary color, try again!'.format(second))
     second = input('Could you give me a second primary color?\n').lower()
 print('Awesome!')
+
 color_list = [first, second]
 if first == second:
     print(f'{first} plus {second} is {first}')
