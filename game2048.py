@@ -111,7 +111,7 @@ def shift(board: [[int, ], ], direction):
                     pos -= 1
     
     return new_board, new_board != board
-    
+
 
 def add_block(game_board):
     new_piece = generate_piece(game_board, DEV_MODE)
